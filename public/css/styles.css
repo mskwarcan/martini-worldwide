@@ -3,10 +3,179 @@ body
 	margin:0;
 	padding:0;
 	background:#fff;
+	font-family: "myriad-pro-1","myriad-pro-2", "Myriad Pro", sans-serif;
+	color:#959595;
+}
+
+h2
+{
+  color:#000;
+  font-size:36px;
+  margin:0;
+}
+
+a
+{
+  color:#82acd9;
+}
+
+p
+{
+  font-size:18px;
 }
 
 #wrapper
 {
 	width:960px;
 	margin:0 auto;
+}
+
+.navigation
+{
+  width:968px;
+  height:86px;
+  background:url("/images/topbar.jpg");
+  font-weight:300;
+  font-size:18px;
+  position:relative;
+}
+
+.navigation ul
+{
+  margin:20px 15px 0 0;
+  padding:0;
+  float:right;
+  list-style:none;
+  clear:right;
+}
+
+.navigation ul li
+{
+  float:left;
+  margin:0 10px;
+}
+
+.navigation ul li a
+{
+  color:#8b8b8b;
+  text-decoration:none;
+}
+
+a.home
+{
+  display:inline-block;
+  width:70px;
+  height:40px;
+  position:absolute;
+  top:40px;
+  left:10px;
+}
+
+a.contact
+{
+  color:#fff;
+  float:right;
+  text-decoration:none;
+  margin:9px 15px 0 0;
+  display:inline-block;
+}
+
+.promo
+{
+  padding-left:14px;
+}
+
+.boxes
+{
+  position:relative;
+  left:8px;
+}
+
+.box
+{
+  padding:5px 7px;
+  float:left;
+  width:304px;
+  height:307px;
+  background:url("/images/box.jpg");
+}
+
+.box2
+{
+  padding:5px 30px;
+  float:left;
+  width:258px;
+  height:307px;
+  background:url("/images/box.jpg");
+}
+
+.box h2, .box2 h2
+{
+  font-weight:500;
+  margin:5px 0 0;
+  color:#000;
+  font-size:30px;
+}
+
+.small
+{
+  font-size:14px;
+}
+
+.ruler
+{
+  position:relative;
+  left:-21px;
+  top:3px;
+}
+
+.elements
+{
+  float:left;
+  margin-right:10px;
+}
+
+.tools
+{
+  float:right;
+  margin-left:-20px;
+}
+
+.top_bg
+{
+  background:url("/images/top_bg.jpg") no-repeat;
+  margin-left:14px;
+}
+
+.container
+{
+  width:873px;
+  padding:10px 35px;
+  background:url("/images/bottom_bg.jpg") no-repeat bottom;
+}
+
+.left_col
+{
+  width:295px;
+  border-right:#b8b8b8 3px solid;
+  padding-right:35px;
+}
+
+.left_col p
+{
+  font-weight:300;
+  line-height:1.5;
+}
+
+#footer
+{
+  margin-top:3px;
+  clear:both;
+  font-size:11px;
+  margin-left:3px;
+  width:924px;
+  color:#000;
+  height:12px;
+  padding:15px 20px;
+  background:url("/images/footer.jpg");
 }

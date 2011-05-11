@@ -8,17 +8,31 @@
 	
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<script type="text/javascript" src="/js/scripts.js"></script>
+	<script type="text/javascript" src="http://use.typekit.com/epq8thw.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
 <div id="wrapper">
+	<div class="navigation">
+		<a href="/contact" class="contact">Contact Us</a>
+		
+		<a href="/" class="home"></a>
+		
+		<ul>
+			<li><a href="/features">Features</a></li>
+			<li><a href="/applications">Applications</a></li>
+			<li><a href="/specifications">Specifications</a></li>
+			<li><a href="/resellers">Resellers</a></li>
+		</ul>
+	</div>
 	
 	<div class="main">
-		
+		<%= yield %>
 	</div>	
 
 	<div id="footer">
-		
+		&copy;2011 Martini Worldwide.   All rights reserved.
 	</div>
 </div>
 </body>
