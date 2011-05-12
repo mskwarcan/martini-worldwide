@@ -42,7 +42,7 @@ p
 
 .navigation ul
 {
-	margin:0;
+	margin:9px 14px 0 0;
   padding:0;
   float:right;
   list-style:none;
@@ -52,12 +52,12 @@ p
 .navigation ul li
 {
   float:left;
-  margin:0 10px;
+  margin:0;
 }
 
 .navigation ul li a
 {
-	padding:20px 10px 15px ;
+	padding:10px 15px 10px ;
 	display:inline-block;
   color:#8b8b8b;
   text-decoration:none;
@@ -65,7 +65,7 @@ p
 
 .navigation ul li a:hover
 {
-	background:url("/images/nav_bg.jpg");
+	background:url("/images/nav_hover.png") repeat-x;
 }
 
 a.home
@@ -76,6 +76,12 @@ a.home
   position:absolute;
   top:40px;
   left:10px;
+}
+
+a.reseller
+{
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 a.contact
