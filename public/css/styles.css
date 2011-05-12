@@ -170,14 +170,66 @@ a.contact
 .left_col
 {
   width:295px;
-  border-right:#b8b8b8 3px solid;
   padding-right:35px;
+  float:left;
+}
+
+.right_col
+{
+  border-left:#b8b8b8 3px solid;
+  margin:2px 0 0 333px;
+  min-height:500px;
 }
 
 .left_col p
 {
   font-weight:300;
   line-height:1.5;
+}
+
+
+/* Accordian */
+ul.accordian
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+ul.accordian li
+{
+  padding:0;
+  background:url("/images/dropdown_bg.png") repeat-x bottom;
+  border-bottom:#b8b8b8 3px solid;
+  padding:5px 0;
+  cursor:pointer;
+}
+
+ul.accordian li h3
+{
+  color:#959595;
+  font-size:24px;
+  font-weight:normal;
+  margin:0 0 0 0;
+  background:url("/images/down_arrow.png") no-repeat;
+  padding:0 0 0 40px;
+}
+
+ul.accordian li img
+{
+  float:right;
+  margin-left:5px;
+}
+
+ul.accordian li p
+{
+  font-size:14px;
+}
+
+ul.accordian li .extra
+{
+  display:none;
+  padding-left:15px;
 }
 
 #footer
