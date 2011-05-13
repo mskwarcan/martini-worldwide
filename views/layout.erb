@@ -20,10 +20,10 @@
 		<a href="/" class="home"></a>
 		
 		<ul>
-			<li><a href="/features">Features</a></li>
-			<li><a href="/applications">Applications</a></li>
-			<li><a href="/specifications">Specifications</a></li>
-			<li><a href="/resellers" class="reseller">Resellers</a></li>
+			<li><a <% if @features == true %> class="active_link" <% end %> href="/features">Features</a></li>
+			<li><a <% if @apps == true %> class="active_link" <% end %> href="/applications">Applications</a></li>
+			<li><a <% if @specs == true %> class="active_link" <% end %> href="/specifications">Specifications</a></li>
+			<li><a <% if @resell == true %> class="active_link" <% end %> href="/resellers" class="reseller">Resellers</a></li>
 		</ul>
 	</div>
 	

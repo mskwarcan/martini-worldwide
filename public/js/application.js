@@ -5,10 +5,11 @@ $(document).ready(function(){
 	    $(this).children('.extra').slideUp('fast');
 	    $(this).children('.extra').removeClass('active');
 	  } else {
-	  $('.active').slideUp('fast');  
-	  $('.active').removeClass('active');
-	  $(this).children('.extra').addClass('active');
-	  $(this).children('.extra').slideDown('fast');
+	    $('.active').slideUp('fast');  
+	    $('.active').removeClass('active');
+	    $(this).children('.extra').addClass('active');
+	    $(this).children('.extra').slideDown('fast');
+	    $(this).children('img').fadeIn('fast');
     }
 	  
 	});

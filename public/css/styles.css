@@ -14,6 +14,14 @@ h2
   margin:0;
 }
 
+h3
+{
+  color:#959595;
+  font-size:24px;
+  font-weight:normal;
+  margin:0 0 0 0;
+}
+
 a
 {
   color:#82acd9;
@@ -63,7 +71,7 @@ p
   text-decoration:none;
 }
 
-.navigation ul li a:hover
+.navigation ul li a:hover, .navigation ul li a.active_link
 {
 	background:url("/images/nav_hover.png") repeat-x;
 }
@@ -181,6 +189,14 @@ a.contact
   min-height:500px;
 }
 
+.right_col2
+{
+  border-left:#b8b8b8 3px solid;
+  margin:2px 0 0 333px;
+  padding:0 0 0 15px;
+  min-height:500px;
+}
+
 .left_col p
 {
   font-weight:300;
@@ -207,10 +223,6 @@ ul.accordian li
 
 ul.accordian li h3
 {
-  color:#959595;
-  font-size:24px;
-  font-weight:normal;
-  margin:0 0 0 0;
   background:url("/images/down_arrow.png") no-repeat;
   padding:0 0 0 40px;
 }
@@ -228,8 +240,86 @@ ul.accordian li p
 
 ul.accordian li .extra
 {
+  width:522px;
   display:none;
   padding-left:15px;
+}
+
+ul.accordian li .extra img
+{
+  
+}
+
+/* Specs */
+
+a.spec_button
+{
+  background:url("/images/spec_button.png");
+  display:inline-block;
+  margin:5px 0;
+  width:286px;
+  padding:10px 0;
+  height:74px;
+  color:#000;
+  font-size:28px;
+  text-align:center;
+  text-decoration:none;
+}
+
+table
+{
+  color:#000;
+  width:100%;
+  text-align:center;
+}
+
+tr.solid td
+{
+  padding:0 0 10px 0;
+  border-bottom:2px #000 solid;
+}
+
+td.left
+{
+  text-align:left;
+}
+
+td.dots
+{
+  border-bottom:1px #000 dotted;
+}
+
+td
+{
+  margin:0;
+  padding:6px 0;
+}
+
+/* Resellers */
+
+ul.resell
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+ul.resell li
+{
+  padding:0 10px;
+}
+
+ul.resell li.heading
+{
+  padding:0;
+  background:url("/images/dropdown_bg.png") repeat-x bottom;
+  border-bottom:#b8b8b8 3px solid;
+  padding:10px;
+}
+
+ul.resell li p
+{
+  font-size:14px;
 }
 
 #footer
@@ -243,4 +333,25 @@ ul.accordian li .extra
   height:12px;
   padding:15px 20px;
   background:url("/images/footer.jpg");
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
 }

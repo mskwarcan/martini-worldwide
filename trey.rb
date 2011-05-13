@@ -7,18 +7,22 @@ get '/' do
 end
 
 get '/features' do
+  @features = true
   erb :features
 end
 
 get '/applications' do
+  @apps = true
   erb :applications
 end
 
 get '/specifications' do
+  @specs = true
   erb :specifications
 end
 
 get '/resellers' do
+  @resell = true
   erb :resellers
 end
 
