@@ -15,4 +15,26 @@ $(document).ready(function(){
 	});
 	
 	$('.promos').cycle('fade');
+	
+	$('.individual').click(function() {
+	  if(!$(this).hasClass('active')){
+	    $('.tab').removeClass('active');
+	    $(this).addClass('active');
+	    $('.general_tab').fadeOut('fast', function() {
+          // Animation complete.
+          $('.individual_tab').fadeIn();
+        });
+	  }
+	});
+	
+	$('.general').click(function() {
+	  if(!$(this).hasClass('active')){
+	    $('.tab').removeClass('active');
+	    $(this).addClass('active');
+	    $('.individual_tab').fadeOut('fast', function() {
+          // Animation complete.
+          $('.general_tab').fadeIn();
+        });
+	  }
+	});
 });
