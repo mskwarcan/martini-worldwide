@@ -35,7 +35,7 @@ post '/email' do
     require 'pony'
     Pony.mail(
           :from => "contact@martini-worldwide.com",
-          :to => 'mike@balcomagency.com',
+          :to => 'innovation@martini-worldwide',
           :subject => "Inquiry",
           :body => erb(:email, :layout => false),
           :port => '587',
