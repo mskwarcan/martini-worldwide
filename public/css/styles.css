@@ -5,6 +5,7 @@ body
 	background:#fff;
 	font-family: "myriad-pro-1","myriad-pro-2", "Myriad Pro", sans-serif;
 	color:#959595;
+	font-weight:300;
 }
 
 h2
@@ -40,6 +41,7 @@ p
 
 .navigation
 {
+  margin-top:5px;
   width:968px;
   height:86px;
   background:url("/images/topbar.jpg");
@@ -50,7 +52,7 @@ p
 
 .navigation ul
 {
-	margin:9px 14px 0 0;
+	margin:-1px 14px 0 0;
   padding:0;
   float:right;
   list-style:none;
@@ -92,19 +94,18 @@ a.reseller
   border-bottom-right-radius: 15px;
 }
 
-a.contact
+
+/* Promos */
+.promos
 {
-  color:#fff;
-  float:right;
-  text-decoration:none;
-  margin:9px 15px 0 0;
-  display:inline-block;
+  height:464px;
+  width:940px;
+  position:relative;
+  left:14px;
+  background:url("/images/promo.jpg");
 }
 
-.promo
-{
-  padding-left:14px;
-}
+
 
 .boxes
 {
@@ -114,11 +115,19 @@ a.contact
 
 .box
 {
-  padding:5px 7px;
+  padding:20px;
   float:left;
-  width:304px;
-  height:307px;
+  width:277px;
+  height:277px;
   background:url("/images/box.jpg");
+  color:#959595;
+}
+
+.box p
+{
+  clear:left;
+  position:relative;
+  top:-5px;
 }
 
 .box2
@@ -130,12 +139,22 @@ a.contact
   background:url("/images/box.jpg");
 }
 
+.box2 p
+{
+  margin:0;
+}
+
 .box h2, .box2 h2
 {
   font-weight:500;
   margin:5px 0 0;
   color:#000;
-  font-size:30px;
+  font-size:24px;
+}
+
+.box2 h2
+{
+  margin-top:10px;
 }
 
 .small
@@ -159,7 +178,7 @@ a.contact
 .tools
 {
   float:right;
-  margin-left:-20px;
+  margin-bottom:10px;
 }
 
 .top_bg
@@ -179,19 +198,20 @@ a.contact
 {
   width:295px;
   padding-right:35px;
+  font-size:20px;
   float:left;
 }
 
 .right_col
 {
-  border-left:#b8b8b8 3px solid;
+  border-left:#b3b3b3 3px solid;
   margin:2px 0 0 333px;
   min-height:500px;
 }
 
 .right_col2
 {
-  border-left:#b8b8b8 3px solid;
+  border-left:#b3b3b3 3px solid;
   margin:2px 0 0 333px;
   padding:0 0 0 15px;
   min-height:500px;
@@ -204,6 +224,12 @@ a.contact
 }
 
 
+/* Applications */
+ul.accordian.application li
+{
+  background:url('/images/dropdown_bg.png') no-repeat 10px 15px;
+}
+
 /* Accordian */
 ul.accordian
 {
@@ -215,16 +241,57 @@ ul.accordian
 ul.accordian li
 {
   padding:0;
-  background:url("/images/dropdown_bg.png") repeat-x bottom;
-  border-bottom:#b8b8b8 3px solid;
+  border-bottom:#b3b3b3 3px solid;
   padding:5px 0;
   cursor:pointer;
 }
 
 ul.accordian li h3
 {
-  background:url("/images/down_arrow.png") no-repeat;
-  padding:0 0 0 40px;
+  font-size:28px;
+  color:#959595;
+  padding:10px 0 10px 60px;
+  margin-left:7px;
+}
+
+ul.accordian li.cp h3
+{
+  background:url("/images/cl.png") no-repeat;
+}
+
+ul.accordian li.mp h3
+{
+  background:url("/images/mp.png") no-repeat;
+}
+
+ul.accordian li.compat h3
+{
+  background:url("/images/compat.png") no-repeat;
+}
+
+ul.accordian li.safety h3
+{
+  background:url("/images/safety.png") no-repeat;
+}
+
+ul.accordian li.fire h3
+{
+  background:url("/images/fire.png") no-repeat;
+}
+
+ul.accordian li.bulb h3
+{
+  background:url("/images/bulb.png") no-repeat;
+}
+
+ul.accordian li.weight h3
+{
+  background:url("/images/weight.png") no-repeat;
+}
+
+ul.accordian li.acid h3
+{
+  background:url("/images/acid.png") no-repeat;
 }
 
 ul.accordian li img
@@ -235,7 +302,7 @@ ul.accordian li img
 
 ul.accordian li p
 {
-  font-size:14px;
+  margin-top:5px;
 }
 
 ul.accordian li .extra
@@ -307,24 +374,84 @@ ul.resell
 ul.resell li
 {
   padding:0 10px;
+  border-top:#b3b3b3 3px solid;
+}
+
+ul.resell li:first-child
+{
+  border-top:none;
 }
 
 ul.resell li.heading
 {
   padding:0;
-  background:url("/images/dropdown_bg.png") repeat-x bottom;
-  border-bottom:#b8b8b8 3px solid;
   padding:10px;
 }
 
-ul.resell li p
+/* Contact */
+
+img.contact
 {
+  margin-bottom:-40px;
+}
+
+a.contact
+{
+  color:#fff;
+  float:right;
+  text-decoration:none;
+  margin:1px 4px 0 0;
+  padding:9px 12px;
+  display:inline-block;
+}
+
+a.contact.active_link, a.contact:hover
+{
+  background:url('/images/contact_hover.jpg');
+}
+
+form input[type="text"], form textarea
+{
+  width:300px;
+}
+
+form td
+{
+  text-align:left;
+  padding: 3px 0;
+}
+
+form td.text
+{
+  padding-right:5px;
+  text-align:right;
+}
+
+form label
+{
+  color:#959595;
   font-size:14px;
 }
 
+form textarea
+{
+  height:150px;
+}
+
+.notification
+{
+  background:#a3ea9e;
+  padding:3px 10px;
+  border:1px solid #58c050;
+  color:#16870e;
+  margin-left:10px;
+}
+
+/* Footer */
+
 #footer
 {
-  margin-top:3px;
+  margin-top:6px;
   clear:both;
   font-size:11px;
   margin-left:3px;
@@ -332,7 +459,7 @@ ul.resell li p
   color:#000;
   height:12px;
   padding:15px 20px;
-  background:url("/images/footer.jpg");
+  background:url("/images/footer.jpg") no-repeat;
 }
 
 .clearfix:after {

@@ -3,6 +3,8 @@ GEM
   specs:
     i18n (0.5.0)
     rack (1.2.2)
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.2.0)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
@@ -13,4 +15,5 @@ PLATFORMS
 
 DEPENDENCIES
   i18n
+  shotgun
   sinatra

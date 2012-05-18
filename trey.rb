@@ -27,5 +27,28 @@ get '/resellers' do
 end
 
 get '/contact' do
+  @contact = true
   erb :contact
+end
+
+post '/email' do
+    require 'pony'
+    Pony.mail(
+          :from => "contact@martini-worldwide.com",
+          :to => 'mike@balcomagency.com',
+          :subject => "Inquiry",
+          :body => erb(:email, :layout => false),
+          :port => '587',
+          :via => :smtp,
+          :via_options => { 
+            :address              => 'smtp.sendgrid.net', 
+            :port                 => '587', 
+            :enable_starttls_auto => true, 
+            :user_name            => ENV['SENDGRID_USERNAME'], 
+            :password             => ENV['SENDGRID_PASSWORD'], 
+            :authentication       => :plain, 
+            :domain               => ENV['SENDGRID_DOMAIN']
+          })
+    @sent = true
+    erb :contact
 end

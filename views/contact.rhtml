@@ -1,15 +1,18 @@
 <div class="top_bg">
 	<div class="container clearfix">
 		<div class="left_col">
-			<img src="/images/contact.png" />
+			<img src="/images/contact.png" class="contact"/>
 			<p>Martini Worldwide is redefining the oil and gas well service industry with innovative new tools and technologies that increase effectiveness and reduce costs. “Powering Innovation” is more than just a slogan. It is a core value demonstrated by every Martini associate. We will never settle for offering products that are simply an imitation of an existing design. We are dedicated to innovation and improvement. We are committed to exceeding current capabilities – not to mention exceeding your expectations.</p>
 		</div>
 		<div class="right_col">
+		  <% if @send == true %>
+		    <div class="notification">
+		      Your message has been sent. We will contact you shortly.
+		    </div>
+		  <% end %>
 			<ul class="resell">
 				<li class="heading">
 					<h3>Like to know more?</h3>
-				</li>
-				<li>
 					<p>Please give us a call at (713) 396-3334
 					to speak with a representative.</p>
 					
@@ -19,21 +22,36 @@
 				</li>
 				<li class="heading">
 					<h3>Inquire online.</h3>
-				</li>
-				<li>
 					<p>The M3 is unmatched in this industry across every characteristic and when considered together is revolutionary.  You can see below how we stack up against the legacy moineau type and roller vane motor.</p>
 					
 					<form id="form">
-						<label for="name">Name:</label>
-						<input type="text" name="name" id="name"/>
-						<label for="email">Email:</label>
-						<input type="text" name="email" id="email"/>
-						<label for="phone">Day Phone:</label>
-						<input type="text" name="phone" id="phone"/>
-						<label for="mobile">Mobile Phone:</label>
-						<input type="text" name="mobile" id="mobile"/>
-						<label for="message">Message:</label>
-						<input type="textarea" name="message" id="message"></textarea>
+					  <table cellspacing="0" cellpadding="0">
+					    <tr>
+					    </tr>
+						    <td class="text"><label for="name">Name:</label></td>
+						    <td><input type="text" name="name" id="name"/></td>
+							</tr>
+							<tr>
+						    <td class="text"><label for="email">Email:</label></td>
+						    <td><input type="text" name="email" id="email"/></td>
+						    <tr>
+						  </tr>
+						  <td class="text"><label for="phone">Day Phone:</label></td>
+						  <td><input type="text" name="phone" id="phone"/></td>
+						<tr>
+						</tr>
+						  <td class="text"><label for="mobile">Mobile Phone:</label></td>
+						  <td><input type="text" name="mobile" id="mobile"/></td>
+						</tr>
+						<tr>
+						  <td class="text" valign="top"><label for="message">Message:</label></td>
+						  <td><textarea name="message" id="message"></textarea></td>
+						</tr>
+						<tr>
+						  <td></td>
+						  <td><input type="submit" value="Send"></td>
+						</tr>
+						</table>
 					</form>
 				</li>
 			</ul>

@@ -7,6 +7,7 @@
 	<link href="/css/styles.css" rel="stylesheet" type="text/css" />
 	
 	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/cycle.js"></script>
 	<script type="text/javascript" src="/js/application.js"></script>
 	<script type="text/javascript" src="http://use.typekit.com/epq8thw.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -15,7 +16,7 @@
 <body>
 <div id="wrapper">
 	<div class="navigation">
-		<a href="/contact" class="contact">Contact Us</a>
+		<a href="/contact" class="<% if @contact == true %>active_link<% end %> contact">Contact Us</a>
 		
 		<a href="/" class="home"></a>
 		
@@ -32,7 +33,7 @@
 	</div>	
 
 	<div id="footer">
-		&copy;2011 Martini Worldwide.   All rights reserved.
+		&copy;<%= Time.now.year %> Martini Worldwide.   All rights reserved.
 	</div>
 </div>
 </body>

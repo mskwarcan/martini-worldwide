@@ -13,4 +13,6 @@ $(document).ready(function(){
     }
 	  
 	});
+	
+	$('.promos').cycle('fade');
 });
